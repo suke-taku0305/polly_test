@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>
+            スキル削除ページ
+        </title>
+    </header>
+    <body>
+        <p>{{object.name}}を削除しますか？</p>
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit">削除</button>
+            <a href="{% url 'skills:detail' object.pk %}">キャンセル</a>
+        </form>
+    </body>
+</html>

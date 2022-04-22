@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>{{ object.name }}スキル</title>
+    </header>
+    <body>
+        <p>{{ object.name }}</p>
+        <p>{{ object.description }}</p>
+        <div><a href="{% url 'skills:update' object.pk %}">情報更新</a></div>
+        <div><a href="{% url 'skills:delete' object.pk %}">削除</a></div>
+    </body>
+</html>

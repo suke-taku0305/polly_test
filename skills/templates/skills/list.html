@@ -1,0 +1,8 @@
+
+{% for skill in object_list %}
+    <p>
+        <a href="{% url 'skills:detail' skill.pk %}">{{skill.name}}</a>
+    </p>
+{% empty %}
+    <p>スキルがありません</p>
+{% endfor %}

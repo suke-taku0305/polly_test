@@ -1,0 +1,10 @@
+
+{% for polly in object_list %}
+<p>
+  <a href="{% url 'polly:detail' polly.pk %}">{{ polly.remark }} </a>
+</p>
+{% empty %}
+音声がありません
+{% endfor %}
+
+<div><a href="{% url 'polly:create' %}">音声を作成する</a></div>

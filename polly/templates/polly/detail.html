@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <title>{{ object.remark }}</title>
+  </header>
+  <body>
+    <p>{{ object.talker }}</p>
+    <p>{{ object.remark }}</p>   
+    
+    <figure>
+        <figcaption>Pollyで作成した音声</figcaption>
+        <audio
+            controls
+            src="{{ object.audio.url }}">
+                Your browser does not support the
+                <code>audio</code> element.
+        </audio>
+    </figure>
+  <body>
+</html>

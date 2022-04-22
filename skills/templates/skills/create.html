@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Skill作成ページ</title>
+    </header>
+    <body>
+        <div>Skillの情報を入力してください</div>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">作成</button>
+        </form>
+    </body>
+</html>
